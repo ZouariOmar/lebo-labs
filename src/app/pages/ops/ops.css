@@ -1,0 +1,102 @@
+/* ---- Hero ---- */
+.ops-hero {
+  background: linear-gradient(135deg, #7A1FA2, #3B4CCA);
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.ops-hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.ops-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ---- Intro ---- */
+.ops-intro {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.ops-intro h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #7A1FA2;
+}
+
+.ops-intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ---- Steps ---- */
+.ops-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-violet);
+  box-shadow: 0 12px 35px rgba(122, 31, 162, 0.25);
+}
+
+.step h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #3B4CCA;
+}
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+/* ---- Icons ---- */
+.icon {
+  font-family: 'Material Symbols Rounded';
+  font-size: 30px;
+  color: #3B4CCA;
+  margin-bottom: 15px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.step:hover .icon {
+  color: #7A1FA2;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .ops-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .ops-hero p {
+    font-size: 1rem;
+  }
+}
