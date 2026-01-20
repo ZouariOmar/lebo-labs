@@ -38,7 +38,7 @@
   <a href="#development">Development</a> •
   <a href="#building">Building</a> •
   <a href="#testing">Testing</a> •
-  <a href="#deployment-(with-netlify)">Deployment</a> •
+  <a href="#deployment-with-netlify">Deployment</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a> •
   <a href="#contact" >Contact</a>
@@ -147,14 +147,10 @@ ng e2e
 
 ## Deployment (with Netlify)
 
-Add angular runtime [Netlify](https://app.netlify.com) package
-
-```bash
-npm install @netlify/angular-runtime@latest --save-dev
-```
+This project already includes the Angular runtime [Netlify](https://app.netlify.com) package (`@netlify/angular-runtime`) as a dev dependency, so you do not need to install it again after running `npm install`.
 
 > [!NOTE]
-> Make sure that `netlify.toml` and `src/_redirects` exists!
+> Make sure that `netlify.toml` exist!
 
 ## Credits
 
