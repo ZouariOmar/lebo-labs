@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Navbar } from '../../../core/components/navbar/navbar';
-import { Footer } from '../../../core/components/footer/footer';
+import { Navbar } from '../../core/components/navbar/navbar';
+import { Footer } from '../../core/components/footer/footer';
 import WebsiteInfo from '../../models/website-info';
 
 @Component({

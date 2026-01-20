@@ -13,7 +13,7 @@
   <br />
   <a href="https://lebo-labs.vercel.app"><img src="img/lebo-labs.png" alt="LeboLabs" width="400"></a>
   <br />
-  <a href="https://lebo-labs.vercel.app"><h1>LeboLabs</h1></a>
+  <h1><a href="https://lebo-labs.vercel.app">LeboLabs</a></h1>
   <h6>
     LeboLabs is a modern Angular-based application designed to provide a clean, scalable, and efficient frontend architecture.
     It focuses on performance, maintainability, and developer productivity using the latest Angular features and best practices.

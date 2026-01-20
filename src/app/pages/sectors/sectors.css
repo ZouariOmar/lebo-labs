@@ -1,0 +1,107 @@
+/* -------------------------
+   SECTOR PAGE HERO
+-------------------------- */
+.sectors-hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: var(--gradient-main);
+  color: var(--text-light);
+}
+
+.sectors-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.6rem;
+}
+
+.sectors-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* -------------------------
+   GRID LAYOUT
+-------------------------- */
+.sectors-grid {
+  display: grid;
+  gap: 2.5rem;
+  width: min(1200px, 90%);
+  margin: 4rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* -------------------------
+   SECTOR CARD (Glass & Hover)
+-------------------------- */
+.sector-card {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.sector-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-violet);
+  box-shadow: 0 12px 35px rgba(122, 31, 162, 0.25);
+}
+
+/* -------------------------
+   ICON
+-------------------------- */
+.icon {
+  background: var(--gradient-main);
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.icon .material-icons {
+  font-size: 32px;
+  color: var(--text-light);
+}
+
+/* -------------------------
+   TEXT CONTENT
+-------------------------- */
+.sector-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-dark);
+}
+
+.sector-card .desc {
+  opacity: 0.85;
+  margin-bottom: 1.2rem;
+  color: var(--text-dark);
+}
+
+/* -------------------------
+   LIST
+-------------------------- */
+.sector-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sector-card li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+
+.sector-card li .material-icons {
+  color: var(--primary-violet);
+  margin-right: 0.5rem;
+  font-size: 20px;
+}
