@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: var(--bg-dark);
+  color: white;
+  position: relative;
+}
+
+.navbar .logo {
+  font-size: 1.7rem;
+  font-family: 'Montserrat';
+}
+
+.navbar span {
+  color: var(--tech-blue);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--tech-blue);
+}
+
+.contact-btn {
+  padding: 8px 16px;
+  background: var(--gradient-main);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* -------------------------
+   ICONS
+-------------------------- */
+.material-symbols-outlined {
+  vertical-align: middle;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Optional: contact button icon */
+.contact-btn .material-symbols-outlined {
+  vertical-align: middle;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    background: var(--bg-dark);
+    text-align: center;
+    display: none;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    padding: 15px 0;
+  }
+
+  .contact-btn {
+    margin: 10px auto 0 auto;
+  }
+}
