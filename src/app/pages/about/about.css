@@ -1,0 +1,192 @@
+.container {
+  width: 88%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-hero {
+  background: linear-gradient(120deg, #7A1FA2 0%, #3B4CCA 100%);
+  padding: 140px 0 160px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.8rem;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  opacity: 0.95;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+/* Hero Icon */
+.hero-icon {
+  font-size: 64px;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* -------------------------
+   ABOUT SECTION
+-------------------------- */
+.about-section {
+  padding: 80px 0 40px;
+}
+
+.about-section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #7A1FA2;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Section Icons (Who we are?) */
+.section-icon {
+  font-size: 32px;
+  color: #7A1FA2;
+  margin-right: 8px;
+}
+
+/* Intro grid */
+.intro-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.intro-grid p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.intro-highlight {
+  background: #f7f7fb;
+  padding: 25px;
+  border-left: 4px solid #7A1FA2;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+/* -------------------------
+   VISION / MISSION / VALUES
+-------------------------- */
+.vision-mission {
+  padding: 40px 0 90px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  border: 1px solid #eee;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 35px rgba(122, 31, 162, 0.25);
+  border-color: var(--primary-violet);
+  transform: translateY(-6px);
+}
+
+.card:hover .card-icon {
+  transform: scale(1.1);
+  color: var(--tech-blue);
+}
+
+.card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #3B4CCA;
+}
+
+/* Card icons */
+.card-icon {
+  font-size: 40px;
+  color: var(--primary-violet);
+  margin-bottom: 15px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Card text */
+.card p,
+.card li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: 18px;
+}
+
+.card li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Card list icons */
+.card ul li .material-symbols-outlined {
+  color: var(--primary-violet);
+  margin-right: 6px;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+/* -------------------------
+   MEDIA QUERIES
+-------------------------- */
+@media (max-width: 900px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    padding: 100px 0 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .card-icon {
+    font-size: 36px;
+  }
+}
