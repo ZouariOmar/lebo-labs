@@ -1,0 +1,51 @@
+.hero {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.hero-content span {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta {
+  margin-top: 20px;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  background: var(--gradient-main);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+}
+
+/* IA Animation */
+.ai-orb {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: var(--gradient-main);
+  filter: blur(20px);
+  animation: float 6s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(-20px);
+    opacity: .9;
+  }
+
+  to {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}

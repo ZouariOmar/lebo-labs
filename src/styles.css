@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+/* -------------------------
+   FONT IMPORT
+-------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Inter:wght@300;400;500&family=Material+Symbols+Rounded:wght@300;400;500&display=swap');
+
+/* -------------------------
+   COLORS
+-------------------------- */
+:root {
+  --primary-violet: #7A1FA2;
+  --tech-blue: #3B4CCA;
+  --gradient-main: linear-gradient(135deg, #7A1FA2, #3B4CCA);
+  --text-dark: #1e1e1e;
+  --text-light: #f4f4f4;
+  --bg-light: #ffffff;
+  --bg-dark: #0d0d16;
+}
+
+/* -------------------------
+   TYPOGRAPHY
+-------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: -.5px;
+}
+
+p,
+a,
+li,
+span {
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+}
+
+/* -------------------------
+   GENERAL LAYOUT
+-------------------------- */
+body {
+  margin: 0;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
