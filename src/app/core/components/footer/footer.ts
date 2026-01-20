@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import ContactInfo from '../../../app/models/contact-info';
-import WebsiteInfo from '../../../app/models/website-info';
+import ContactInfo from '../../../models/contact-info';
+import WebsiteInfo from '../../../models/website-info';
 
 @Component({
   selector: 'app-footer',
