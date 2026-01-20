@@ -36,20 +36,23 @@
 <div align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#development">Development</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#building">Building</a> •
+  <a href="#testing">Testing</a> •
+  <a href="#deployment-(with-netlify)">Deployment</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a> •
   <a href="#contact" >Contact</a>
+  <br />
 </div>
 
 <!-- PROJECT SCREENSHOT -->
 
-![screenshot](res/img/home.png)
+![screenshot](img/home.png)
 
 ## Key Features
 
 - **Modern Angular Stack**
-  - Built with Angular CLI `v20.3.10`
+  - Built with Angular CLI `v21.1.0`
   - Standalone components and optimized build pipeline
   - Modular and scalable project structure
 - **Reusable Components**
@@ -104,13 +107,24 @@ ng serve
 
 ## Building
 
-To build the project for production:
+### Development
+
+To build the project for development:
 
 ```bash
 ng build
 ```
 
-The build artifacts will be stored in the `dist/` directory and optimized for performance.
+### Production
+
+To build the project for production:
+
+```bash
+ng build --configuration=production
+```
+
+> [!NOTE]
+> The build artifacts will be stored in the `dist/` directory and optimized for performance.
 
 ## Testing
 
@@ -128,7 +142,19 @@ ng test
 ng e2e
 ```
 
+> [!NOTE]
 > Angular CLI does not include an E2E framework by default. You may configure Cypress, Playwright, or another tool.
+
+## Deployment (with Netlify)
+
+Add angular runtime [Netlify](https://app.netlify.com) package
+
+```bash
+npm install @netlify/angular-runtime@latest --save-dev
+```
+
+> [!NOTE]
+> Make sure that `netlify.toml` and `src/_redirects` exists!
 
 ## Credits
 
@@ -151,4 +177,4 @@ For questions or suggestions, feel free to reach out:
 - **Email**: [zouariomar20@gmail.com](mailto:zouariomar20@gmail.com)
 - **LinkedIn**: [Zouari Omar](https://www.linkedin.com/in/zouari-omar)
 
-**Happy Coding!**
+> Happy Coding!
