@@ -1,0 +1,37 @@
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>{{ website.firstName }}<span>{{ website.secondName }}</span></h2>
+      <p>Ethical and human-centered AI solutions</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Menu</h3>
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/services">Services</a></li>
+        <li><a routerLink="/sectors">Sectors</a></li>
+        <li><a routerLink="/ops-methodology">OPS Methodology</a></li>
+        <li><a routerLink="/case-study">Case Studies</a></li>
+        <li><a routerLink="/blog">Blog</a></li>
+        <li><a routerLink="/contact" class="contact-btn">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+      <p>Telephone: <a href="tel:+{{ contact.phone }}">+{{ contact.phone }}</a></p>
+      <div class="socials">
+        <a href="{{ contact.linkedin }}" aria-label="LinkedIn">LinkedIn</a>
+        <a href="{{ contact.facebook }}" aria-label="Facebook">Facebook</a>
+        <a href="{{ contact.github }}" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© {{ currentYear }} {{ website.firstName + website.secondName }}. All rights reserved.</p>
+  </div>
+</footer>
