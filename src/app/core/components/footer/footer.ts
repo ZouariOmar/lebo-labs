@@ -21,9 +21,9 @@ export class Footer {
     this.contact = new ContactInfo(
       21693490909,
       "zouariomar20@gmail.com",
-      "https://github.com/ZouariOmar",
-      "https://www.linkedin.com/in/zouari-omar",
-      "https://www.facebook.com/ZouariOmarG"
+      "ZouariOmar",
+      "zouari-omar",
+      "ZouariOmarG"
     )
     this.website = new WebsiteInfo(
       "Lebo",

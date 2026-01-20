@@ -8,5 +8,5 @@ export const routes: Routes = [
   { path: 'ops-methodology', loadComponent: () => import('./pages/ops/ops').then(m => m.Ops) },
   { path: 'use-cases', loadComponent: () => import('./pages/cases/cases').then(m => m.Cases) },
   { path: 'blog', loadComponent: () => import('./pages/blog/blog').then(m => m.Blog) },
-  // { path: 'contact', loadComponent: () => import('./pages/contact/contact').then(m => m.Contact) },
+  { path: 'contact', loadComponent: () => import('./pages/contact/contact').then(m => m.Contact) },
 ]; // Lebo-labs routes
